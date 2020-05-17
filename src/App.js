@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { Component } from "react";
 
-function App() {
-  return (<p> Hello World!</p>);
+class App extends Component {
+  render() {
+    const gree = "it's a small world";
+    const dom = <p className="foo">{gree}</p>;
+    return(
+      <input
+        type="text"
+        onChange={() => {
+          alert("MY name is");
+        }}
+      />
+    );
+  }
 }
 
 export default App;
